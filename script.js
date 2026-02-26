@@ -198,7 +198,7 @@ function generateServiceQuestions(serviceName) {
 // 3. Initialization & Event Listeners
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Initializing Rawaiee Beauty Salon Scripts...');
+    console.log('Initializing Sample Salon Scripts...');
 
     // Navbar Scroll (Removed Parallax, kept only Navbar style change)
     const navbar = document.querySelector('.navbar');

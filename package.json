@@ -1,7 +1,7 @@
 {
-  "name": "rawaiee-beauty-saloon",
+  "name": "sample-salon",
   "version": "1.0.0",
-  "description": "Rawaiee Beauty Salon Website",
+  "description": "Sample Salon Website",
   "main": "index.html",
   "scripts": {
     "dev": "http-server",
@@ -13,7 +13,7 @@
     "salon",
     "website"
   ],
-  "author": "Rawaiee Beauty Salon",
+  "author": "Sample Salon",
   "license": "MIT",
   "dependencies": {
     "http-server": "^14.1.1"

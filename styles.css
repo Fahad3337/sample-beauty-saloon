@@ -1263,6 +1263,7 @@ p {
 .footer-logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     margin-bottom: 1.5rem;
 }
@@ -1291,6 +1292,7 @@ p {
 .footer-section p {
     color: #ccc;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .footer-section ul {
@@ -1314,6 +1316,7 @@ p {
 .social-links {
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
 .social-links a {
