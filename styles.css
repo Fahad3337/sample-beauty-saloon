@@ -1394,8 +1394,22 @@ p {
         left: 0;
     }
 
+    /* Hero Section Mobile */
+    .hero {
+        min-height: 80vh;
+        height: auto;
+        padding: 100px 0 60px;
+    }
+
+    .hero-content {
+        text-align: center;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.3;
     }
 
     .hero p {
@@ -1407,27 +1421,149 @@ p {
     }
 
     .hero-buttons {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
     }
 
-    .services-grid,
-    .testimonials-grid {
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    /* Services Mobile */
+    .services {
+        padding: 60px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* About Mobile */
+    .about {
+        padding: 60px 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-features {
         grid-template-columns: 1fr;
     }
 
-    .about-content,
+    .about-img {
+        height: 300px;
+    }
+
+    /* Gallery Mobile */
+    .gallery {
+        padding: 60px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Testimonials Mobile */
+    .testimonials {
+        padding: 60px 0;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Show only one review card per slide on mobile */
+    .testimonials-grid .testimonial-card:nth-child(n+2) {
+        display: none;
+    }
+
+    .testimonial-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .slider-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 0.8rem;
+    }
+
+    .prev-btn {
+        left: 5px;
+    }
+
+    .next-btn {
+        right: 5px;
+    }
+
+    .slider-dots {
+        margin-top: 1.5rem;
+    }
+
+    /* Contact Mobile */
+    .contact {
+        padding: 60px 0;
+    }
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+
+    .form-header h3 {
+        font-size: 1.4rem;
+    }
+
+    /* Info Cards Mobile */
+    .info-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Footer Mobile */
+    .footer {
+        padding: 40px 0 20px;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-section ul {
+        padding: 0;
     }
 
     .social-links {
@@ -1438,40 +1574,68 @@ p {
         flex-direction: column;
     }
 
-    .about-features {
-        grid-template-columns: 1fr;
+    /* Modal Mobile */
+    .modal-content {
+        width: 95%;
+        max-height: 85vh;
+        border-radius: 12px;
     }
 
-    .info-item {
-        flex-direction: column;
-        text-align: center;
+    .modal-header {
+        padding: 1.5rem 1.5rem 1rem;
+    }
+
+    #serviceBookingForm {
+        padding: 1.5rem;
+    }
+
+    /* Notifications Mobile */
+    .notification {
+        min-width: auto;
+        max-width: calc(100vw - 30px);
+        left: 15px;
+        right: 15px;
+        font-size: 0.85rem;
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-header p {
+        font-size: 0.95rem;
     }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
+    .hero h1 {
+        font-size: 1.8rem;
     }
 
-    h2 {
-        font-size: 1.8rem;
+    .hero p {
+        font-size: 0.9rem;
     }
 
     .container {
         padding: 0 15px;
     }
 
-    .service-card,
-    .contact-form {
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-card {
         padding: 1.5rem;
     }
 
     .hero {
-        padding: 100px 0 50px;
+        padding: 90px 0 40px;
+        min-height: 70vh;
     }
 
     .section-header {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .services,
@@ -1479,7 +1643,33 @@ p {
     .gallery,
     .testimonials,
     .contact {
-        padding: 50px 0;
+        padding: 40px 0;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .testimonial-card p {
+        font-size: 0.9rem;
+    }
+
+    .about-img {
+        height: 220px;
+    }
+
+    .gallery-item img {
+        height: 220px;
+    }
+
+    .footer-logo h3 {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 24px;
+        font-size: 0.95rem;
     }
 }
 
